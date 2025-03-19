@@ -27,10 +27,10 @@
         </activity>
         <meta-data
             android:name="CLEVERTAP_ACCOUNT_ID"
-            android:value="TEST-ZRK-6KZ-675Z"/>
+            android:value="Account Id"/>
         <meta-data
             android:name="CLEVERTAP_TOKEN"
-            android:value="TEST-136-321"/>
+            android:value="Account Token"/>
 
         <service android:name="com.clevertap.android.sdk.pushnotification.fcm.FcmMessageListenerService"
             android:exported="true">
