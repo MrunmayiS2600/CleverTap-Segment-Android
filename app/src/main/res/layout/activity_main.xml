@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/inapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inapp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp" />
+    <!-- Button to Identify User -->
+    <Button
+        android:id="@+id/identifyUserButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Identify User"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"/>
+
+    <!-- Button to Track Test Event -->
+
+
+    <Button
+        android:id="@+id/trackTestEventButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Track Test Event"
+        app:layout_constraintTop_toBottomOf="@id/identifyUserButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Button to Track Order Completed Event -->
+    <Button
+        android:id="@+id/trackOrderCompletedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Track Order Completed"
+        app:layout_constraintTop_toBottomOf="@id/trackTestEventButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/PushB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:text="Push Notification"
+        app:layout_constraintTop_toBottomOf="@id/trackOrderCompletedButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/Inbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inbox"
+        app:layout_constraintTop_toBottomOf="@id/PushB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/loadDisplayUnitsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Load Display Units"
+        app:layout_constraintTop_toBottomOf="@id/Inbox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Container for Display Units -->
+    <!-- Container for Display Units -->
+    <!-- Container for Display Units -->
+    <FrameLayout
+        android:id="@+id/displayUnitContainer"
+        android:layout_width="360dp"
+        android:layout_height="210dp"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loadDisplayUnitsButton">
+
+        <ImageView
+            android:id="@+id/displayUnitImage"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="145dp"
+            android:scaleType="fitCenter" />
+    </FrameLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
